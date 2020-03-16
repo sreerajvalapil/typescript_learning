@@ -1,21 +1,21 @@
+"use strict";
 console.log("The file is loading  . IT s the time ...aadadad");
 //Object 
-var person = {
+const person = {
     "name": "sreeraj",
-    "age": 20
+    "age": 20,
 };
 console.log(person.name);
 // Array 
-var sreyyanToys = ["JCB", "Truck"];
-for (var _i = 0, sreyyanToys_1 = sreyyanToys; _i < sreyyanToys_1.length; _i++) {
-    var toy = sreyyanToys_1[_i];
+const sreyyanToys = ["JCB", "Truck"];
+for (const toy of sreyyanToys) {
     console.log(toy);
 }
-sreyyanToys.forEach(function (element) {
+sreyyanToys.forEach(element => {
     console.log("element ..... :" + element);
 });
 // Object with Araay and Tuples : 
-var student1 = {
+const student1 = {
     name: "sreyaan",
     toyList: ["JCB", "Lorry", "Helicopter"],
     foodTuple: [1, "horlicks"]
@@ -24,7 +24,18 @@ student1.foodTuple.push("dinosor");
 student1.foodTuple.push(10);
 student1.foodTuple.push(2, "chockos");
 console.log("Values from the  Tuples ");
-student1.foodTuple.forEach(function (element) {
+student1.foodTuple.forEach(element => {
     console.log("The value of foodTyple : " + element);
 });
-var a = "sss";
+const a = "sss";
+var Role;
+(function (Role) {
+    Role[Role["ADMIN"] = 0] = "ADMIN";
+    Role[Role["AUTHOR"] = 1] = "AUTHOR";
+    Role[Role["STAFF"] = 2] = "STAFF";
+})(Role || (Role = {}));
+;
+const truck1 = {
+    name: "Volvo 1",
+    orderRole: Role.ADMIN
+};

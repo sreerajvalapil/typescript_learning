@@ -1,15 +1,24 @@
 {
   "name": "app1",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"lite-server"
+    "start": "lite-server"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "lite-server": "^2.5.4"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sreerajvalapil/typescript_learning.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sreerajvalapil/typescript_learning/issues"
+  },
+  "homepage": "https://github.com/sreerajvalapil/typescript_learning#readme",
+  "description": ""
 }
