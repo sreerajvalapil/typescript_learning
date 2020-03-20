@@ -1,10 +1,39 @@
 interface Foo {
 bar:number ;
+applyFoo():void;
 }
 
 class Bar implements Foo {
     bar:number = 100 ;
+    applyFoo() {
+        console.log("i am foo") ;
+    }
+}
 
+
+abstract class Department {
+    name?:string;
+    abstract calculateBalance() : number;
+}
+
+class AccountDepartment extends Department {
+
+
+    constructor(private address:string) {
+        super();
+        this.address =address ;
+    }
+    calculateBalance() {
+        return 1000 ;
+    }
+
+    get getAddress() {
+        return this.address ;
+    }
+
+    set setAddress(add:string) {
+        this.address = add ;
+    }
 }
 
 // type casting 
